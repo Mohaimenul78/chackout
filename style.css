@@ -1,0 +1,425 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:wght@300&display=swap');
+
+*{
+     padding: 0px;
+     margin: 0px;
+     font-family: 'Lato', sans-serif;
+     /*font-family: 'Open Sans', sans-serif;*/
+}
+
+
+a{
+  text-decoration: none;
+}
+
+ul li{
+  list-style: none;
+}
+
+.h_body{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(#009688  0% , #009688 130px, #d9dbd5 130px,  #d9dbd5 100%);
+
+}
+
+.container{
+  width: 1300px ;
+  height: calc(100vh - 40px);
+  display: flex;
+  background-color: #fff  ;
+ box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.6), 0 2px 5px 0 rgba(0, 0, 0, 0.6);
+}
+
+.left-sid{
+  flex: 30%;
+  overflow: hidden;
+}
+
+.right{
+  flex:70%;
+  /*background-color: #e5ddd5;*/
+  overflow: hidden;
+  position: relative;
+}
+
+
+
+
+
+.header{
+  width: 100%;
+  height: 50px;
+  background-color: rgba(0, 0, 0, .07)  ;
+   display: flex;
+  justify-content: space-between;
+  align-items:center ;
+  padding: 0 10px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #ccc;
+}
+
+.img{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.img img{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+  .right-icon-list{
+    display: flex;
+  }
+
+  .right-icon-list li{
+    margin: 0px 5px   ;
+  }
+
+   .right-icon-list li a{
+    color: #565151 ;
+  }
+
+  .search{
+    display: flex;
+    padding: 0px 10px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0, 0, 0, .05)  ;
+    position: relative;
+  }
+
+  .search input{
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 0px 20px 0px 40px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+  }
+
+  .search i{
+    position: absolute;
+    top:17px;
+    left: 20px;
+    color: #ccc;
+  }
+
+  .search input::placeholder{
+    font-weight: bold;
+    color: #aaa;
+  }
+
+  .chart_list{
+    width: 100%;
+    height: calc(100vh - 140px);
+    overflow: hidden;
+    overflow-y: scroll;
+    margin-bottom: 200px;
+  }
+
+  
+/* width */
+.chart_list::-webkit-scrollbar {
+    width: 6px;
+}
+
+/* Track */
+.chart_list::-webkit-scrollbar-track {
+    background: #white;
+}
+
+/* Handle */
+.chart_list::-webkit-scrollbar-thumb {
+    background: #ccc;
+}
+
+
+
+
+ .list{
+  display: flex;
+  padding: 10px 10px;
+  cursor: pointer;
+ }
+
+  .list:hover{
+    background-color:#ebebeb ;
+  }
+
+ .active{
+  background-color: #ebebeb;
+
+ }
+
+.friend-images{
+  width:50px ;
+  height: 50px;
+ border-radius: 50%;
+ margin-right: 10px;
+}
+
+ .friend-images img{
+   width: 45px;
+  height: 45px;
+  border-radius: 50%;
+ }
+
+ .friend-text{
+  width: 100%;
+ }
+
+.name-text{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.name-text h5{
+  font-size: 14px;
+  color: #111 ;
+  font-weight: bold;
+}
+
+
+.name-text p{
+  font-size: 12px;
+  color: #aaa ;
+  font-weight: 400;
+}
+
+.time{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+.time p{
+  font-size: 13px;
+  color: #625f5f;
+  font-weight: 400;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.text{
+  flex: 1;
+}
+  
+.round{
+  width: 20px;
+  height: 20px;
+  background-color: #06d755;
+  border-radius: 50% ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 9px;
+  color: #111;
+  font-weight: bold;
+}
+
+
+
+
+
+.chat_heard{
+  display: flex;
+}
+
+.sm{
+  font-size: 18px;
+}
+
+.chat_text{
+  margin-left: 10px;
+}
+
+.chat_text h4{
+   font-size: 14px;
+   color: #111 ;
+}
+
+.chat_text  p{
+   font-size: 12px;
+   color:#817777  ;
+
+}
+
+
+
+.chat_box{
+  width: 100%;
+  height: calc(100vh - 150px);
+  background-color: #e5ddd5;
+  overflow: hidden;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  
+  padding: 50px;
+  box-sizing: border-box;
+
+}
+
+
+.all_sms{
+  display: flex;
+  width: 100%;
+}
+
+
+.my_sms{
+  width: 100%;
+  justify-content: flex-end;
+}
+
+
+.massage_time{
+  display: flex;
+  overflow: hidden;
+  justify-content: flex-end;
+  position: relative;
+}
+
+
+.width {
+  position: relative;
+    max-width: 65%;
+  padding: 12px 12px 5px 12px;
+  font-size: 14px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.friend_sms_bg{
+  background-color: #fff;
+}
+
+.my_sms_bg:before{
+ content: '';
+ position: absolute;
+ width: 20px;
+ height: 20px;
+ background-color: red;
+ top: 0;
+ right:-11px;
+ background: linear-gradient(135deg, #dcf8c6 0%, #dcf8c6 50%, transparent  50%, transparent );
+}
+
+
+.friend_sms_bg:before{
+ content: '';
+ position: absolute;
+ width: 20px;
+ height: 20px;
+ background-color: red;
+ top: 0;
+ left:-11px;
+ background: linear-gradient(235deg, #fff 0%, #fff 50%, transparent  50%, transparent );
+}
+
+.my_sms_bg{
+  background-color: #dcf8c6;
+}
+
+
+.width span{
+  display: inline-block;
+  font-size: 20px;
+  color: #aaa;
+}
+
+.width p{
+  font-size: 15px;
+  font-weight: normal;
+  color: #111;
+}
+
+
+.width b{
+  font-weight: normal;
+  font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.input_box{
+  width: 100%;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.17)  ;
+   display: flex;
+  justify-content: space-between;
+  align-items:center ;
+  padding: 0 10px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #ccc;
+
+}
+
+.input_box a{
+  font-size: 30px;
+  color: #626060;
+}
+
+.imogi{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+}
+
+.text_input{
+  flex: 1;
+}
+
+.text_input input{
+   width: 100%;
+   height: 40px;
+   border-radius: 20px;
+   outline: none;
+   border: none;
+   padding: 0px 20px;
+   box-sizing: border-box;
+}
+
+
+.voice{
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+}
+
+
+.sent{
+  color: #aaa;
+}
+
+.seen span{
+   color: #06d755;
+}
